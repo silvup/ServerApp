@@ -129,9 +129,9 @@ public class ServerApp {
                     System.out.println("Repository name: " + repScanner.nextLine() + "\nStars count: " + starNumber + "\n");
                     sumOfStars += Integer.parseInt(starNumber);
                 }
-                System.out.println("Sum of all stars in every repository: " + sumOfStars);
             }
             while (count == 100);
+            System.out.println("Sum of all stars in every repository: " + sumOfStars);
             System.out.println("\nList of used languages with corresponding byte code size value:");
             System.out.println("This part of the code has been commented due to Github's requests limit...");
             /*for (Map.Entry<String, Integer> entry : popularCodes.entrySet()) {
