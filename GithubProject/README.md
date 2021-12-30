@@ -1,12 +1,12 @@
 Instrukcja kompilacji:
 
-cd GithubProject\src
-javac ServerApp.java
-java ServerApp.java {username}
+cd GithubProject\src  
+javac ServerApp.java  
+java ServerApp.java {username}  
 
 {username} jest opcjonalnym argumentem oznaczającym użytkownika, którego chcemy sprawdzić. Program sam o niego zapyta w przypadku braku podania go jako parametru.
 
-Uwagi.
+Uwagi.  
 
 Program opiera się na wysyłaniu zapytań do Github API i z nich pobiera pewne dane. Ma to niestety swoje ograniczenia - program może wykonać jedynie 60 zapytań na godzinę.
 Z tego powodu część kodu odpowiadająca za wypisanie używanych języków została w kodzie zakomentowana. Ten fragment kodu tworzył nowe zapytanie do każdego repozytorium o wszystkie języki, 
